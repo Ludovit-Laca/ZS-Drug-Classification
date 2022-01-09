@@ -71,7 +71,9 @@
     (Na_to_K ?na)
     (test (> ?na 14.829))
 =>
-    (printout t "vhodný liek pre Vás: drugY" crlf)
+    (printout t "Vhodný liek pre Vás: drugY" crlf)
+    (printout t "---- Dôvod ----" crlf)
+    (printout t "pomer sodíka a draslíka > 14.829" crlf)
 )
 
 ;vypis hodnotu drugA
@@ -86,6 +88,10 @@
     (test (<= ?age 50.5))
 =>
     (printout t "Vhodný liek pre Vás je: drugA" crlf)
+    (printout t "---- Dôvod ----" crlf)
+    (printout t "pomer sodíka a draslíka <= 14.829" crlf)
+    (printout t "úroveň krvného tlaku <= 0.5" crlf)
+    (printout t "vek <= 50.5" crlf)
 )
 
 ;vypis hodnotu drugB
@@ -100,6 +106,10 @@
     (test (> ?age 50.5))
 =>
     (printout t "Vhodný liek pre Vás je: drugB" crlf)
+    (printout t "---- Dôvod ----" crlf)
+    (printout t "pomer sodíka a draslíka <= 14.829" crlf)
+    (printout t "úroveň krvného tlaku <= 0.5" crlf)
+    (printout t "vek > 50.5" crlf)
 )
 
 ;vypis hodnotu drugX
@@ -112,6 +122,9 @@
     (test (> ?bp 1.5))
 =>
     (printout t "Vhodný liek pre Vás je: drugX" crlf)
+    (printout t "---- Dôvod ----" crlf)
+    (printout t "pomer sodíka a draslíka <= 14.829" crlf)
+    (printout t "úroveň krvného tlaku > 1.5" crlf)
 )
 
 ;vypis hodnotu drugX
@@ -127,6 +140,10 @@
     (test (> ?c 1.5))
 =>
     (printout t "Vhodný liek pre Vás je: drugX" crlf)
+    (printout t "---- Dôvod ----" crlf)
+    (printout t "pomer sodíka a draslíka <= 14.829" crlf)
+    (printout t "úroveň krvného tlaku > 0.5 a <= 1.5" crlf)
+    (printout t "cholesterol > 1.5" crlf)
 )
 
 ;vypis hodnotu drugC
@@ -142,6 +159,10 @@
     (test (<= ?c 0.5))
 =>
     (printout t "Vhodný liek pre Vás je: drugC" crlf)
+    (printout t "---- Dôvod ----" crlf)
+    (printout t "pomer sodíka a draslíka <= 14.829" crlf)
+    (printout t "úroveň krvného tlaku > 0.5 a <= 1.5" crlf)
+    (printout t "cholesterol <= 0.5" crlf)
 )
 
 ;vypis hodnotu drugE
@@ -160,6 +181,11 @@
     (test (<= ?age 58.0))
 =>
     (printout t "Vhodný liek pre Vás je: drugE" crlf)
+    (printout t "---- Dôvod ----" crlf)
+    (printout t "pomer sodíka a draslíka <= 14.829" crlf)
+    (printout t "úroveň krvného tlaku > 0.5 a <= 1.5" crlf)
+    (printout t "cholesterol > 0.5 a <= 1.5" crlf)
+    (printout t "vek <= 58.0" crlf)
 )
 
 ;vypis hodnotu drugD
@@ -178,4 +204,9 @@
     (test (> ?age 58.0))
 =>
     (printout t "Vhodný liek pre Vás je: drugD" crlf)
+    (printout t "---- Dôvod ----" crlf)
+    (printout t "pomer sodíka a draslíka <= 14.829" crlf)
+    (printout t "úroveň krvného tlaku > 0.5 a <= 1.5" crlf)
+    (printout t "cholesterol > 0.5 a <= 1.5" crlf)
+    (printout t "vek > 58.0" crlf)
 )
